@@ -1,28 +1,53 @@
-import React from "react";
+import React, { useState } from "react";
 
 const Tabs = () => {
-  const scrollToSection = (sectionId) => {
-    const section = document.getElementById(sectionId);
+  const [activeTab, setActiveTab] = useState("about-section");
+
+  const scrollToSection = (id) => {
+    const section = document.getElementById(id);
     if (section) {
       section.scrollIntoView({ behavior: "smooth", block: "start" });
+      setActiveTab(id); // Set active tab
     }
   };
 
   return (
-    <div className="flex border-b border-gray-200">
-      {[
-        { name: "About", id: "about-section" },
-        { name: "Resume", id: "resume-section" },
-        { name: "My Activities", id: "activities-section" },
-      ].map((tab, index) => (
-        <button
-          key={index}
-          className="flex-1 py-2 text-center text-gray-500 hover:text-green-500"
-          onClick={() => scrollToSection(tab.id)}
-        >
-          {tab.name}
-        </button>
-      ))}
+    <div className="flex space-x-4 border-b pb-2">
+      {/* About Tab */}
+      <button
+        onClick={() => scrollToSection("about-section")}
+        className={`text-sm font-medium px-2 py-1 ${
+          activeTab === "about-section"
+            ? "text-green-500 border-b-2 border-green-500"
+            : "text-gray-500 hover:text-green-500"
+        }`}
+      >
+        About
+      </button>
+
+      {/* Resume Tab */}
+      <button
+        onClick={() => scrollToSection("resume-section")}
+        className={`text-sm font-medium px-2 py-1 ${
+          activeTab === "resume-section"
+            ? "text-green-500 border-b-2 border-green-500"
+            : "text-gray-500 hover:text-green-500"
+        }`}
+      >
+        Resume
+      </button>
+
+      {/* Activities Tab */}
+      <button
+        onClick={() => scrollToSection("activities-section")}
+        className={`text-sm font-medium px-2 py-1 ${
+          activeTab === "activities-section"
+            ? "text-green-500 border-b-2 border-green-500"
+            : "text-gray-500 hover:text-green-500"
+        }`}
+      >
+        My Activities
+      </button>
     </div>
   );
 };

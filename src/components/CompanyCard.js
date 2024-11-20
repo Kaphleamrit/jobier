@@ -1,5 +1,6 @@
 import React from "react";
 import Company1 from "../assets/company1.png";
+import Star from "../assets/star.png";
 
 const CompanyCard = ({ name, role, rating, location, jobs, employees, logo }) => {
   return (
@@ -17,20 +18,7 @@ const CompanyCard = ({ name, role, rating, location, jobs, employees, logo }) =>
         <div className="flex items-center justify-between">
           <h3 className="font-bold text-lg text-left">{name}</h3>
           <div className="flex items-center text-yellow-500 space-x-1">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              strokeWidth={2}
-              stroke="currentColor"
-              className="w-4 h-4"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="M12 4.5l2.813 5.75 6.375.938-4.625 4.5L18.625 21 12 17.813 5.375 21l1.062-5.313L2 11.188l6.188-.938L12 4.5z"
-              />
-            </svg>
+            <img src={Star} alt="Star" className="w-4 h-4" />
             <span className="text-sm">{rating}</span>
           </div>
         </div>

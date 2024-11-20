@@ -1,6 +1,6 @@
 import React from "react";
 import Recruiter1 from "../assets/recruiter1.jpg";
-
+import Star from "../assets/star.png";
 const RecruiterCard = () => {
   return (
     <div className="bg-white shadow-md rounded-lg p-3 max-w-xs">
@@ -28,20 +28,7 @@ const RecruiterCard = () => {
 
         {/* Rating */}
         <div className="flex items-center text-yellow-500 space-x-1">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            strokeWidth={2}
-            stroke="currentColor"
-            className="w-4 h-4"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l2.175 6.673a1 1 0 00.95.69h7.025c.967 0 1.371 1.24.588 1.81l-5.7 4.148a1 1 0 00-.364 1.118l2.175 6.673c.3.921-.755 1.688-1.54 1.118l-5.7-4.148a1 1 0 00-1.176 0l-5.7 4.148c-.784.57-1.838-.197-1.54-1.118l2.175-6.673a1 1 0 00-.364-1.118l-5.7-4.148c-.783-.57-.379-1.81.588-1.81h7.025a1 1 0 00.95-.69l2.175-6.673z"
-            />
-          </svg>
+          <img src={Star} alt="Star" className="w-4 h-4" />
           <span className="text-gray-600 text-sm">3.8</span>
         </div>
       </div>

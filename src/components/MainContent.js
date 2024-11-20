@@ -1,30 +1,31 @@
 import React from "react";
 import ProfileHeader from "./ProfileHeader";
+import Tabs from "./Tabs";
 import AboutSection from "./AboutSection";
 import ResumeSection from "./ResumeSection";
 import ActivitiesSection from "./ActivitiesSection";
-import BestRecruiters from "./BestRecruiters";
 
 const MainContent = () => {
   return (
-    <div>
+    <div className="border p-4 md:p-6 bg-white">
       {/* Profile Header */}
-      <ProfileHeader />
+      <div className="mb-4">
+        <ProfileHeader />
+      </div>
+
+      {/* Tabs */}
+      <div className="mt-4 md:pl-4">
+        <Tabs />
+      </div>
 
       {/* Content Sections */}
-      <div className="mt-6 space-y-6">
+      <div className="mt-2 space-y-6">
         <AboutSection />
         <ResumeSection />
         <ActivitiesSection />
-
-        {/* Best Recruiters Section */}
-        <div>
-          <BestRecruiters />
-        </div>
       </div>
     </div>
   );
 };
 
 export default MainContent;
-  
