@@ -1,3 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* For navbar spacing */
+.navbar {
+  margin-bottom: 0;
+}
+
+/* Smooth out border appearance */
+.border-b {
+  border-color: #e5e7eb; /* Tailwind's gray-200 */
+}
+
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
