@@ -7,7 +7,9 @@ const RightSidebar = () => {
     <div className="w-full md:w-1/3 bg-gray-50 p-4 space-y-6">
       {/* Best Recruiters Section */}
       <div>
-        <h2 className="text-lg font-semibold mb-4">Best Recruiters for you</h2>
+        <h2 className="text-lg font-semibold mb-4 text-center md:text-left">
+          Best Recruiters for you
+        </h2>
         <div className="space-y-4">
           <RecruiterCard
             name="Susan Jeans"
@@ -30,7 +32,9 @@ const RightSidebar = () => {
 
       {/* Best Companies Section */}
       <div>
-        <h2 className="text-lg font-semibold mb-4">Best Company for you</h2>
+        <h2 className="text-lg font-semibold mb-4 text-center md:text-left">
+          Best Company for you
+        </h2>
         <div className="space-y-4">
           <CompanyCard
             name="Bluefox"

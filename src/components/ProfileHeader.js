@@ -40,7 +40,7 @@ const ProfileHeader = () => {
         </button>
 
         {/* Open To Button */}
-        <button className="border-2 border-black text-black px-4 py-1 rounded-full hover:bg-black hover:text-white transition">
+        <button className="border-2 border-black text-black px-4 py-1 rounded-full hover:bg-black hover:text-white transition hidden md:block">
           Open to
         </button>
       </div>

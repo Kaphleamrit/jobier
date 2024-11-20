@@ -3,7 +3,7 @@ import Recruiter1 from "../assets/recruiter1.jpg";
 import Star from "../assets/star.png";
 const RecruiterCard = () => {
   return (
-    <div className="bg-white shadow-md rounded-lg p-3 max-w-xs">
+    <div className="bg-white shadow-md rounded-lg p-3 max-w-xs mx-auto md:mx-0">
       {/* Profile Section */}
       <div className="flex items-center space-x-4">
         {/* Profile Image */}

@@ -2,17 +2,18 @@ import React from "react";
 import { FaBookmark, FaEllipsisV } from "react-icons/fa";
 import MetaLogo from "../assets/metaCompany.jpg";
 import ArrowRight from "../assets/arrow-right-circle.png";
+
 const ActivitiesSection = () => {
   const activities = [
     {
-      companyLogo: MetaLogo, // Replace with actual logo URL or import
+      companyLogo: MetaLogo,
       companyName: "Meta Company",
       role: "Product Designer",
       location: "Porto, Portugal (On Site)",
       archived: "Archived 5 Days Ago",
     },
     {
-      companyLogo: MetaLogo, // Replace with actual logo URL or import
+      companyLogo: MetaLogo,
       companyName: "Meta Company",
       role: "Product Designer",
       location: "Porto, Portugal (On Site)",
@@ -21,13 +22,21 @@ const ActivitiesSection = () => {
   ];
 
   return (
-    <div id="activities-section" className="p-6 bg-white rounded-lg">
-      <h3 className="text-lg font-semibold mb-4" style={{ color: "#8C8F8E" }}>My Activities</h3>
+    <div id="activities-section" className="p-4 md:p-6 bg-white rounded-lg">
+      <h3
+        className="text-lg font-semibold mb-4"
+        style={{ color: "#8C8F8E" }}
+      >
+        My Activities
+      </h3>
 
       {/* Activity Cards */}
-      <div className="grid grid-cols-2 gap-4">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         {activities.map((activity, index) => (
-          <div key={index} className="border rounded-lg p-4 shadow-sm bg-white relative">
+          <div
+            key={index}
+            className="border rounded-lg p-4 shadow-sm bg-white relative"
+          >
             {/* Top Section */}
             <div className="flex justify-between items-start">
               {/* Logo and Name */}
@@ -38,7 +47,9 @@ const ActivitiesSection = () => {
                   className="w-10 h-10 rounded-full object-cover"
                 />
                 <div>
-                  <h4 className="font-semibold text-sm">{activity.companyName}</h4>
+                  <h4 className="font-semibold text-sm">
+                    {activity.companyName}
+                  </h4>
                 </div>
               </div>
               {/* Icons */}

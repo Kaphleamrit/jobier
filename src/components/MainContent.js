@@ -7,22 +7,22 @@ import ActivitiesSection from "./ActivitiesSection";
 
 const MainContent = () => {
   return (
-    <div className="border p-4 md:p-6 bg-white">
+    <div className="p-4 bg-white">
       {/* Profile Header */}
       <div className="mb-4">
         <ProfileHeader />
       </div>
 
       {/* Tabs */}
-      <div className="mt-4 md:pl-4">
+      <div className="mt-4">
         <Tabs />
       </div>
 
       {/* Content Sections */}
-      <div className="mt-2 space-y-6">
+      <div className="mt-4 space-y-6">
         <AboutSection />
         <ResumeSection />
-        <ActivitiesSection />
+        <ActivitiesSection />  
       </div>
     </div>
   );

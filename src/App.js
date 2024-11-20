@@ -10,16 +10,15 @@ function App() {
       <Navbar />
 
       {/* Main Layout */}
-      <div className="flex mt-4">
+      <div className="flex flex-col md:flex-row mt-4">
         {/* Main Content */}
         <div className="flex-grow p-4">
           <MainContent />
         </div>
-
-        {/* Right Sidebar */}
-        <RightSidebar />
+          <RightSidebar />
+          
+        </div>
       </div>
-    </div>
   );
 }
 
